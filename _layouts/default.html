@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- {% include navigation.html %} -->
+    {% include sidebar.html %}
+    {% include header.html %}
+    <main>
+    {% include intro-cards.html %}
+    {% include artist-cards.html %}
+
+    <div class="territories-component pb-card-component">
+        <div class="container container-small">
+            <div class="card">
+                <div class="component-inner-header">
+                    <div class="title">
+                        <h2>Territories Distribution</h2>
+                    </div>
+                    <div class="sort">
+                        <div class="dropdown">Sort By <span>Most Plays</span></div>
+                    </div>
+                </div>
+                <div class="component-big">
+                    <div class="component-left">
+                        <div class="component-big-content">
+                            <div class="card-intro">
+                                <div class="emph">13 Countries</div>
+                                <div class="emph-sub">with over 1 million plays</div>
+                            </div>
+                            <div class="trend-text">
+                                <p>You have a <span class="trend pos">11% spread</span> in comparison with the previous month.</p>
+                            </div>
+                            <div class="component-table">
+                                <table>
+                                    <div class="table-header">
+                                        <div class="title">Plays by Top Country</div>
+                                        <div class="title">37.6m</div>
+                                    </div>
+                                    <tbody>
+                                        <tr>
+                                        <td>United States</td>
+                                        <td class="bold">12.6m</td>
+                                        </tr>
+                                        <tr>
+                                        <td>United Kingdom</td>
+                                        <td class="bold">11.2m</td>
+                                        </tr>
+                                        <tr>
+                                        <td>France</td>
+                                        <td class="bold">9.1m</td>
+                                        </tr>
+                                        <tr>
+                                        <td>Germany</td>
+                                        <td class="bold">7.6m</td>
+                                        </tr>
+                                        <tr>
+                                        <td>Canada</td>
+                                        <td class="bold">4.2m</td>
+                                        </tr>
+                                        <tr>
+                                        <td>Italy</td>
+                                        <td class="bold">2.2m</td>
+                                        </tr>
+                                        <tr>
+                                        <td>Belgium</td>
+                                        <td class="bold">2.2m</td>
+                                        </tr>
+                                        <tr>
+                                        <td>Netherlands</td>
+                                        <td class="bold">1.4m</td>
+                                        </tr>
+                                        <tr>
+                                        <td>Poland</td>
+                                        <td class="bold">1.3m</td>
+                                        </tr>
+                                        <td>Ireland</td>
+                                        <td class="bold">1.1m</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="component-right map-placeholder">
+                        <div class="map" style="background-image: url('/assets/images/map.png')">i</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- {{ content }} -->
+    </main>
+  </body>
+</html>
