@@ -614,6 +614,74 @@ header {
     border-right: 2px solid $grey-light;
 }
 
+nav {
+    position: relative;
+}
+
+.burger {
+    height: 18px;
+    width: 24px;
+    position: absolute;
+    left: 50%;
+    top: 30px;
+    transform: translateX(-50%);
+    span {
+        width: 12px;
+        height: 2px;
+        background: $grey-med;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        &:first-child {
+            transform: translateY(-8px);
+            width: 24px;
+        }
+        &:last-child {
+            transform: translateY(6px);
+            width: 18px;
+        }
+    }
+}
+
+ul.nav-links {
+    position: absolute;
+    top: 80px;
+    width: 86px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    li {
+        width: 100%;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        position: relative;
+        &.active {
+            &:after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 3px;
+                height: 100%;
+                background: $primary;
+            }
+        }
+        a {
+            padding: 24px 30px;
+            &.active {
+                svg {
+                    fill: $primary;
+                    path {
+                        fill: $primary;
+                    }
+                }
+            }
+        }
+    }
+}
+
 // buttons
 .select {
     position: relative;
